@@ -7,6 +7,8 @@ WITH raw_data AS (
     SELECT * FROM ecommerce.raw.raw_ecommerce_nov
     UNION ALL
     SELECT * FROM ecommerce.raw.raw_ecommerce_dec
+    UNION ALL
+    SELECT * FROM ecommerce.raw.raw_ecommerce_oct
 )
 
 SELECT
