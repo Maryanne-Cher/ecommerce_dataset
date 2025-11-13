@@ -1,0 +1,37 @@
+version: 2
+
+sources:
+  - name: ecommerce
+    schema: dev
+    tables:
+      - name: src_ecommerce
+        description: raw ecommerce behavior data for the month of November
+        loaded_at_field: event_time_ts
+        freshness:
+          warn_after: { count: 12, period: hour }
+          error_after: { count: 24, period: hour }
+        columns:
+          - name: event_time_ts
+            description: timestamp for date and time, mainly for data freshness
+          - name: event_date
+            description: date when event happened
+          - name: event_time
+            description: time when event happened
+          - name: event_type
+            description: online customer journey broken down into view, purchase, cart
+          - name: product_id
+            description: id of a product
+          - name: category_id
+            description: product's category id
+          - name: category
+            description: product's main category
+          - name: subcategory
+            description: product's subcategory
+          - name: brand
+            description: downcased string of brand name; can be missing
+          - name: price
+            description: float price of a product; present
+          - name: user_id
+            description: permanent user id
+          - name: user_session
+            description: temporary user session id; changes each time the user returns to the online store after a long purchase

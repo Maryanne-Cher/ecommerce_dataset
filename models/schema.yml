@@ -1,0 +1,75 @@
+version: 2
+
+models:
+  - name: dim_products
+    description: Dimension table for products
+    columns:
+      - name: product_id
+        description: Primary key for the products
+        tests:
+          - not_null
+          - unique
+
+      - name: category_id
+        description: Category ID for the products
+        tests:
+          - not_null
+
+      - name: brand
+        description: Brand name for the products
+        tests:
+          - not_null
+
+  - name: fact_ecommerce
+    description: Fact table containing e-commerce events
+    columns:
+      - name: event_key
+        description: Unique surrogate key, primary key for this table
+        tests:
+          - not_null
+          - unique
+
+      - name: event_date
+        description: Date when event happened
+        tests:
+          - not_null
+
+      - name: event_time_only
+        description: Time when event happened
+        tests:
+          - not_null
+
+      - name: event_type
+        description: Online customer journey broken down into view, purchase, cart
+        tests:
+          - not_null
+
+      - name: product_id
+        description: ID of a product
+        tests:
+          - not_null
+
+      - name: category
+        description: Product category ID
+        tests:
+          - not_null
+
+      - name: subcategory
+        description: Category broken down into main and second-tier categories
+        tests:
+          - not_null
+
+      - name: price
+        description: Price of the product
+        tests:
+          - not_null
+
+      - name: user_id
+        description: Permanent user ID
+        tests:
+          - not_null
+
+      - name: user_session
+        description: Temporary user session ID; changes each time the user returns to the store
+        tests:
+          - not_null
