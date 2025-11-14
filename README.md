@@ -1,8 +1,13 @@
 # Ecommerce Dataset using AWS S3, Snowflake, dbt, and Power BI
 
+[![AWS](https://img.shields.io/badge/AWS-S3-orange)](https://aws.amazon.com/s3/) 
+[![Snowflake](https://img.shields.io/badge/Snowflake-Cloud-blue)](https://www.snowflake.com/) 
+[![dbt](https://img.shields.io/badge/dbt-Transformations-red)](https://www.getdbt.com/) 
+[![Power BI](https://img.shields.io/badge/Power%20BI-Analytics-yellow)](https://powerbi.microsoft.com/)
+
 This project uses the **Ecommerce Behavior Data from a Multi-Category Store** dataset from Kaggle.
 
-This is **Part 2** of my end-to-end data engineering and analytics pipeline, where I transitioned the workflow from an on-premises setup to a fully cloud-based architecture.
+This is **Part 2** of my end-to-end data engineering and analytics pipeline, transitioning from an on-premises workflow to a fully cloud-based architecture.
 
 ---
 
@@ -94,20 +99,8 @@ dbt is the core transformation layer of the pipeline. I used dbt to:
 
 🔗 **GitHub:** [https://github.com/Maryanne-Cher/ecommerce_dataset](https://github.com/Maryanne-Cher/ecommerce_dataset)
 
-# Ecommerce Dataset using AWS S3, Snowflake, dbt, and Power BI
 
-[![AWS](https://img.shields.io/badge/AWS-S3-orange)](https://aws.amazon.com/s3/) 
-[![Snowflake](https://img.shields.io/badge/Snowflake-Cloud-blue)](https://www.snowflake.com/) 
-[![dbt](https://img.shields.io/badge/dbt-Transformations-red)](https://www.getdbt.com/) 
-[![Power BI](https://img.shields.io/badge/Power%20BI-Analytics-yellow)](https://powerbi.microsoft.com/)
 
-This project uses the **Ecommerce Behavior Data from a Multi-Category Store** dataset from Kaggle.
-
-This is **Part 2** of my end-to-end data engineering and analytics pipeline, transitioning from an on-premises workflow to a fully cloud-based architecture.
-
----
-
-## 🏗️ Cloud Architecture Overview
 
 
 
